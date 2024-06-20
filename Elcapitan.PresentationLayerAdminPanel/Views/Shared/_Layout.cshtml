@@ -1,46 +1,61 @@
 ﻿<!DOCTYPE html>
-
-<html
-    lang="en"
-    class="light-style layout-menu-fixed"
-    dir="ltr"
-    data-theme="theme-default"
-    data-assets-path="../assets/"
-    data-template="vertical-menu-template-free">
-@await Html.PartialAsync("Layouts/Head")
-
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="~/assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="~/assets/vendors/font-awesome/css/font-awesome.min.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="~/assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/assets/images/favicon.png" />
+</head>
 <body>
-<!-- Layout wrapper -->
-<div class="layout-wrapper layout-content-navbar">
-    <div class="layout-container">
-        @await Html.PartialAsync("Layouts/Sidebar")
-        @RenderBody()
-        <!-- / Layout page -->
+<div class="container-scroller">
+    @await Html.PartialAsync("Layouts/Navbar")
+    <div class="container-fluid page-body-wrapper">
+     @await Html.PartialAsync("Layouts/Sidebar")
+        <div class="main-panel">
+           @RenderBody()
+     @await Html.PartialAsync("Layouts/Footer")
+        </div>
+        <!-- main-panel ends -->
     </div>
-
-    <!-- Overlay -->
-    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- page-body-wrapper ends -->
 </div>
-<!-- / Layout wrapper -->
-<!-- Core JS -->
-<!-- build:js assets/vendor/js/core.js -->
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="assets/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="~/assets/vendors/chart.js/chart.umd.js"></script>
+@* <script src="~assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> *@
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="~/assets/js/off-canvas.js"></script>
+<script src="~/assets/js/misc.js"></script>
+<script src="~/assets/js/settings.js"></script>
+<script src="~/assets/js/todolist.js"></script>
+<script src="~/assets/js/jquery.cookie.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="~/assets/js/dashboard.js"></script>
+<!-- End custom js for this page -->
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-@* @await RenderSectionAsync("Scripts", required: false) *@
-
-<script src="~/assets/vendor/libs/popper/popper.js"></script>
-<script src="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-<script src="~/assets/vendor/js/menu.js"></script>
-<!-- endbuild -->
-
-<!-- Vendors JS -->
-
-<!-- Main JS -->
-<script src="~/assets/js/main.js"></script>
-
-<!-- Page JS -->
-
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
+
+
