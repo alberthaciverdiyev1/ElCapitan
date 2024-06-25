@@ -1,22 +1,18 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ElCapitan.EntityLayer.Base
+namespace ElCapitan.EntityLayer
 {
-    public class CommonEntities
+    public class AppRole:IdentityRole<int>
     {
-        public int CreatorId { get; set; }
         public DateTime? CreatedAt { get; set; } = DateTime.Now;
-        public int UpdaterId { get; set; }
 
         public DateTime? UpdatedAt { get; set; }
-        public int DeleterId { get; set; }
         public DateTime? DeletedAt { get; set; }
-
-
 
     }
 }
