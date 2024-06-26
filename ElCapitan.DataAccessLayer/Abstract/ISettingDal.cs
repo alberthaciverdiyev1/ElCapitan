@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace ElCapitan.DataAccessLayer.Abstract
 {
-    public interface ICategoryDal:IGenericDal<Category>
+    internal interface ISettingDal:IGenericDal<Setting>
     {
-
     }
 }

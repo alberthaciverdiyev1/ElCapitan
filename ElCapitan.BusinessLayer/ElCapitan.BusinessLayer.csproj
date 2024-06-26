@@ -32,7 +32,6 @@
   <ItemGroup>
     <Folder Include="ValidationRules\AppRoleValidationRules\" />
     <Folder Include="ValidationRules\CategoryValidationRules\" />
-    <Folder Include="ValidationRules\SettingValidationRules\" />
   </ItemGroup>
 
 </Project>

@@ -23,7 +23,6 @@
   <ItemGroup>
     <Folder Include="AppRoleDtos\" />
     <Folder Include="CategoryDtos\" />
-    <Folder Include="SettingDtos\" />
   </ItemGroup>
 
 </Project>
