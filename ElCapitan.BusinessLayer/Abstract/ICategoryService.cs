@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ElCapitan.DataAccessLayer.Abstract
+namespace ElCapitan.BusinessLayer.Abstract
 {
-    public interface ISettingDal:IGenericDal<Setting>
+    internal interface ICategoryService:IGenericService<Category>
     {
     }
 }

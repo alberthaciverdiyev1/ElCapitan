@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ElCapitan.DataAccessLayer.Concrete
 {
-    internal class Context : IdentityDbContext<AppUser,AppRole,int>
+    public class Context : IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
